@@ -2060,3 +2060,10 @@ jobs:
           tag_name: ${{ env.TAG_NAME }}
           files: |
             flutter/build/rustdesk-${{ env.VERSION }}-${{ env.RELEASE_NAME }}.tar.gz
+
+
+              on:
+               push:
+              branches:
+            - master
+            workflow_dispatch:
